@@ -7,6 +7,9 @@ import numpy as np
 # Then change to this directory and type 'python ee_pose_matrix_control.py  # python3 bartender.py if using ROS Noetic'
 
 def main():
+
+    import pdb
+    pdb.set_trace()
     T_sd = np.identity(4)
     T_sd[0,3] = 0.3
     T_sd[1,3] = 0

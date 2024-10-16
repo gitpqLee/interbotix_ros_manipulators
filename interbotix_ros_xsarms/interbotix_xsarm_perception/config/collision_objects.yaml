@@ -1,0 +1,17 @@
+collision_objects:
+  - name: wall
+    type: primitive
+    geometry:
+      primitive_type: box
+      dimensions: [0.2, 1.0, 2.0]
+    pose:
+      position: {x: 1.0, y: 0.0, z: 0.0}
+      orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}
+  # - name: table
+  #   type: primitive
+  #   geometry:
+  #     primitive_type: box
+  #     dimensions: [1.0, 1.0, 0.5]
+  #   pose:
+  #     position: {x: -1.0, y: 0.0, z: 0.0}
+  #     orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}

@@ -9,7 +9,7 @@ import sys
 # Then change to this directory and type 'python ee_cartesian_trajectory.py  # python3 bartender.py if using ROS Noetic'
 
 def main():
-    bot = InterbotixManipulatorXS("wx250", "arm", "gripper")
+    bot = InterbotixManipulatorXS("wx250s", "arm", "gripper")
 
     if (bot.arm.group_info.num_joints < 5):
         print('This demo requires the robot to have at least 5 joints!')
