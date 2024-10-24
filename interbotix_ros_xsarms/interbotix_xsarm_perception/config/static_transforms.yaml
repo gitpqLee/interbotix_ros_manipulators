@@ -1,0 +1,9 @@
+- child_frame_id: camera_color_optical_frame
+  frame_id: wx250s/base_link
+  qw: 0.02016249066491134
+  qx: 0.012455918475743163
+  qy: 0.972109616445269
+  qz: -0.23328718621062727
+  x: 0.636882
+  y: 0.43057
+  z: 1.15308
