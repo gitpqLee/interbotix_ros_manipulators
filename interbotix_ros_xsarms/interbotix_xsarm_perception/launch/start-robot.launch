@@ -14,7 +14,7 @@
   <!-- <arg name="mode_configs"                      default="$(find interbotix_xsarm_moveit)/config/modes.yaml"/> -->
   <arg name="mode_configs"                      default="$(find interbotix_xsarm_control)/config/modes.yaml"/>
   
-  <arg name="tag_family"                        default="tag36h11"/>
+  <!-- <arg name="tag_family"                        default="tag36h11"/>
   <arg name="standalone_tags"                   default="$(find interbotix_perception_modules)/config/tags.yaml"/>
   <arg name="camera_frame"                      default="camera_color_optical_frame"/>
   <arg name="apriltag_ns"                       default="apriltag"/>
@@ -25,7 +25,7 @@
   <arg name="arm_base_frame"                    default="$(arg robot_name)/$(arg base_link_frame)"/>
   <arg name="arm_tag_frame"                     default="$(arg robot_name)/ar_tag_link"/>
   <arg name="use_armtag_tuner_gui"              default="false"/>
-  <arg name="position_only"                     default="false"/>
+  <arg name="position_only"                     default="false"/> -->
   
   <arg name="load_transforms"                   default="true"/>
   <arg name="transform_filepath"                default="$(find interbotix_xsarm_perception)/config/static_transforms.yaml"/>
@@ -46,7 +46,7 @@
     <arg name="dof"                               value="$(arg dof)"/>
   </include>
   
-  <include file="$(find interbotix_perception_modules)/launch/armtag.launch">
+  <!-- <include file="$(find interbotix_perception_modules)/launch/armtag.launch">
     <arg name="tag_family"                        value="$(arg tag_family)"/>
     <arg name="standalone_tags"                   value="$(arg standalone_tags)"/>
     <arg name="camera_frame"                      value="$(arg camera_frame)"/>
@@ -59,9 +59,9 @@
     <arg name="arm_tag_frame"                     value="$(arg arm_tag_frame)"/>
     <arg name="use_armtag_tuner_gui"              value="$(arg use_armtag_tuner_gui)"/>
     <arg name="position_only"                     value="$(arg position_only)"/>
-  </include>
+  </include> -->
 
-  <include file="$(find interbotix_xsarm_moveit)/launch/move_group.launch" ns="$(arg robot_name)">
+  <!-- <include file="$(find interbotix_xsarm_moveit)/launch/move_group.launch" ns="$(arg robot_name)">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="base_link_frame"                   value="$(arg base_link_frame)"/>
@@ -69,7 +69,7 @@
     <arg name="external_srdf_loc"                 value="$(arg external_srdf_loc)"/>
     <arg name="dof"                               value="$(arg dof)"/>
     <arg name="publish_monitored_planning_scene"  value="true" />
-  </include>
+  </include> -->
 
   <include file="$(find interbotix_perception_modules)/launch/static_transform_pub.launch">
     <arg name="load_transforms"                   value="$(arg load_transforms)"/>
